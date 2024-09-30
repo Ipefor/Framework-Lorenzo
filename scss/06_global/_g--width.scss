@@ -1,0 +1,14 @@
+
+
+@for $index from 1 through 10{
+    .g--width-#{$index*10}{
+        width: $index*10%;
+    }
+}
+
+
+@for $index from 1 through 20{
+    .g--width-#{$index*50px}{
+        width: $index*50px;
+    }
+}
