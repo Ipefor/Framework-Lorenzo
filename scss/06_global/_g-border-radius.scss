@@ -1,0 +1,5 @@
+@for $i from 1 through 10 {
+    .g--border-rarius-#{$i} {   
+        border-radius: 2px * $i; 
+    }
+  }
