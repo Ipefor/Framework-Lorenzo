@@ -78,6 +78,26 @@ $color-palettes: (
                 600: #ffd400,
                 700: #ccaa00,
                 800: #997f00
+        ),
+        "morado": (
+                100: #f3e6ff,
+                200: #e6ccff,
+                300: #cc99ff,
+                400: #b366ff,
+                500: #9933ff,
+                600: #8000ff,
+                700: #6600cc,
+                800: #4c0099
+        ),
+        "naranja": (
+                100: #ffe5cc,
+                200: #ffcc99,
+                300: #ffb366,
+                400: #ff9933,
+                500: #ff8000,
+                600: #ff6000,   // Color principal pc componentes
+                700: #cc4d00,
+                800: #993900
         )
 );
 
