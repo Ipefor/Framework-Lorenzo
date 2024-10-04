@@ -17,12 +17,18 @@
             padding-bottom: 2px * $i;
         }
 
-        &__x-#{$i} {
+        &-y-#{$i} {
+            padding-top: 2px * $i;
             padding-bottom: 2px * $i;
         }
 
-        &__y-#{$i} {
-            padding-bottom: 2px * $i;
+        &-x-#{$i} {
+            padding-left: 2px * $i;
+            padding-right: 2px * $i;
+        }
+
+        &-#{$i} {
+            padding: 2px * $i;
         }
     }
 }
