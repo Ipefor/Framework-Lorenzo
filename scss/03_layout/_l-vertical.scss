@@ -1,0 +1,84 @@
+.l-vertical {
+    display: flex;
+    flex-direction: column;
+
+    // Justificación del contenido
+    &--justify-center {
+        justify-content: center;
+    }
+
+    &--justify-start {
+        justify-content: flex-start;
+    }
+
+    &--justify-end {
+        justify-content: flex-end;
+    }
+
+    &--justify-between {
+        justify-content: space-between;
+    }
+
+    &--justify-around {
+        justify-content: space-around;
+    }
+
+    &--justify-evenly {
+        justify-content: space-evenly;
+    }
+
+    // Alineación de elementos
+    &--align-center {
+        align-items: center;
+    }
+
+    &--align-start {
+        align-items: flex-start;
+    }
+
+    &--align-end {
+        align-items: flex-end;
+    }
+
+    &--align-stretch {
+        align-items: stretch;
+    }
+
+    // Espaciado entre elementos
+    &--gap-small {
+        gap: 8px;
+    }
+
+    &--gap-medium {
+        gap: 16px;
+    }
+
+    &--gap-large {
+        gap: 24px;
+    }
+
+    // Column Gap y Row Gap individual
+    &--column-gap-small {
+        column-gap: 8px;
+    }
+
+    &--column-gap-medium {
+        column-gap: 16px;
+    }
+
+    &--column-gap-large {
+        column-gap: 24px;
+    }
+
+    &--row-gap-small {
+        row-gap: 8px;
+    }
+
+    &--row-gap-medium {
+        row-gap: 16px;
+    }
+
+    &--row-gap-large {
+        row-gap: 24px;
+    }
+}
