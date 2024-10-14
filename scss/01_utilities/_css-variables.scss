@@ -4,4 +4,7 @@
         --margin-#{$i}: nth($list: sizes, $n: i);
         --border-width-#{$i}: nth($list: sizes, $n: i)
     }
+    @each $key, $value in $font-types {
+        --font-#{$key}: #{$value};
+    }
 }

@@ -1,0 +1,22 @@
+// _c-button.scss
+
+// Importar las variables de color
+@import '../06_global/color.scss';
+@import '../06_global/_padding.scss';
+
+// Crear estilos de botones utilizando las paletas de colores
+@each $palette-name, $shades in $color-palettes {
+  @each $shade, $color in $shades {
+    .c-btn--#{$palette-name}-#{$shade} {
+      background-color: #{$color};
+      color: #fff; // Color de texto blanco por defecto
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+    }
+  }
+}
+

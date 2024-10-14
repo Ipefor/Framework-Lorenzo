@@ -1,0 +1,7 @@
+.g--font-family {
+    @each $font-name, $font-family in $font-types {
+        &-#{$font-name} {
+            font-family: $font-family;
+        }
+    }
+}
