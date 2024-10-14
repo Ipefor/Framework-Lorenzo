@@ -1,22 +1,78 @@
 // _c-button.scss
 
 // Importar las variables de color
-@import '../06_global/color.scss';
-@import '../06_global/_padding.scss';
+//@import '../06_global/color.scss';
+//@import '../06_global/_padding.scss';
 
-// Crear estilos de botones utilizando las paletas de colores
+// ejemplo de uso
+//<button class="c-button--principal--principal--mediano">Más información</button>
+//<button class="c-button--rojos--secundario--grande">Más información</button>
+//<button class="c-button--alternativo--terciario--pequeño">Más información</button>
+
+
+// Mapa de tamaños de los botones
+$sizes: (
+  "pequeño": (font-size: 12px, padding: 4px 8px),
+  "mediano": (font-size: 14px, padding: 8px 16px),
+  "grande": (font-size: 16px, padding: 12px 24px)
+);
+
+// Tipos de botones
+$types: (
+  "principal": (background: true, border: false),
+  "secundario": (background: false, border: true),
+  "terciario": (background: false, border: false)
+);
+
+$color-palettes: (
+  "principal": (
+    500: #3399ff,
+    600: #007fff
+  ),
+  "alternativo": (
+    500: #ff9933,
+    600: #ff8000
+  ),
+  "rojos": (
+    500: #ff3333,
+    600: #ff0000
+  )
+);
+
 @each $palette-name, $shades in $color-palettes {
   @each $shade, $color in $shades {
-    .c-btn--#{$palette-name}-#{$shade} {
-      background-color: #{$color};
-      color: #fff; // Color de texto blanco por defecto
-      border: none;
-      padding: 0.5em 1em;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s;
+    @each $type-name, $type-values in $types {
+      @each $size-name, $size-values in $sizes {
+        
+        .c-button--#{$palette-name}--#{$type-name}--#{$size-name} {
+          font-size: map-get($size-values, font-size);
+          padding: map-get($size-values, padding);
+          
+          // Para el botón principal (relleno completo)
+          @if map-get($type-values, background) == true {
+            background-color: $color;
+            color: white;
+          }
 
+          // Para el botón secundario (con borde y texto)
+          @else if map-get($type-values, border) == true {
+            background-color: transparent;
+            border: 1px solid $color;
+            color: $color;
+          }
+
+          // Para el botón terciario (sin fondo ni borde, solo texto)
+          @else {
+            background-color: transparent;
+            color: $color;
+          }
+
+          &:hover {
+            // Cambiar el estilo al pasar el mouse
+            opacity: 0.8;
+          }
+        }
+      }
     }
   }
 }
-
