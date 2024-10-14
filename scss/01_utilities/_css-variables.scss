@@ -1,6 +1,7 @@
 :root {
     @for $i from 1 through 20 {
         --padding-#{$i}: nth($list: sizes, $n: i);
-        --margin-#{$i}: nth($list: sizes, $n: i)
+        --margin-#{$i}: nth($list: sizes, $n: i);
+        --border-width-#{$i}: nth($list: sizes, $n: i)
     }
 }
