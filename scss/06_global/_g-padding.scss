@@ -1,0 +1,34 @@
+.g--padding {
+
+    @for $i from 1 through 20 {
+        &-left-#{$i} {
+            padding-left: var(--padding-$i)
+        }
+
+        &-right-#{$i} {
+            padding-right: var(--padding-$i)
+        }
+
+        &-top-#{$i} {
+            padding-top: var(--padding-$i)
+        }
+
+        &-bottom-#{$i} {
+            padding-bottom: var(--padding-$i)
+        }
+
+        &-y-#{$i} {
+            padding-top: var(--padding-$i);
+            padding-bottom: var(--padding-$i)
+        }
+
+        &-x-#{$i} {
+            padding-left: var(--padding-$i);
+            padding-right: var(--padding-$i)
+        }
+
+        &-#{$i} {
+            padding: var(--padding-$i)
+        }
+    }
+}

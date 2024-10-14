@@ -1,0 +1,34 @@
+.g--margin {
+
+    @for $i from 1 through 20 {
+        &-left-#{$i} {
+            margin-left: var(--margin-$i);
+        }
+
+        &-right-#{$i} {
+            margin-right: var(--margin-$i);
+        }
+
+        &-top-#{$i} {
+            margin-top: var(--margin-$i);
+        }
+
+        &-bottom-#{$i} {
+            margin-bottom: var(--margin-$i);
+        }
+
+        &-y-#{$i} {
+            margin-top: var(--margin-$i);
+            margin-bottom: var(--margin-$i);
+        }
+
+        &-x-#{$i} {
+            margin-left: var(--margin-$i);
+            margin-right: var(--margin-$i);
+        }
+
+        &-#{$i} {
+            margin: var(--margin-$i);
+        }
+    }
+}
