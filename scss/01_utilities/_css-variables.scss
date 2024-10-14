@@ -8,3 +8,13 @@
         --font-#{$key}: #{$value};
     }
 }
+
+
+:root {
+    $sizeBorderRadius:length($sizesBorderRadius);
+
+    @for $i from 1 through $sizeBorderRadius{
+        $valor :nth($sizeBorderRadius, $i);
+        --border-radius-#{$i}: #{$valor};
+    }
+}
