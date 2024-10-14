@@ -4,11 +4,14 @@
   $num-colors: length($colors);
   @for $i from 1 through $num-colors {
     $color: nth($colors, $i);
-    .bg-#{$palette-name}-#{$i} {
+    .background-#{$palette-name}-#{$i} {
       background-color: #{$color};
     }
     .text-#{$palette-name}-#{$i} {
       color: #{$color};
+    }
+    .border-#{$palette-name}-#{$i} {
+      border-color: #{$color};
     }
   }
 }

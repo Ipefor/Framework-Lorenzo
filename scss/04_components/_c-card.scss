@@ -1,0 +1,26 @@
+.card {
+  @extend .bg-principal-1;
+  @extend .shadow-md;
+  @extend .g--border-radius-4;
+  padding: 16px;
+  max-width: 300px;
+  margin: 16px;
+}
+  &__image {
+    width: 100%;
+    height: auto;
+    @extend .g--border-rarius-4
+  }
+  &__title {
+    @extend .text-principal-6;
+    @extend .g--font-family-title;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 12px;
+  }
+  &__content {
+    @extend .text-grises-7;
+    @extend .g--font-family-content;
+    font-size: 1rem;
+    margin-top: 8px;
+  }
