@@ -1,0 +1,58 @@
+.g--text{
+    
+    &-align-center{
+        text-align: center;
+    }
+
+    &-align-end{
+        text-align: end;
+    }
+
+    &-align-left{
+        text-align: left;
+    }
+
+    &-align-right{
+        text-align: right;
+    }
+
+    &-align-start{
+        text-align: start;
+    }
+
+    &-align-justify{
+        text-align: justify;
+    }
+
+    &-justify-center{
+        justify-content: center;
+    }
+
+    &-justify-end{
+        justify-content: end;
+    }
+
+    &-justify-start{
+        justify-content: start;
+    }
+
+    &-justify-left{
+        justify-content: left;
+    }
+
+    &-justify-right{
+        justify-content: right;
+    }
+
+    &-bold{
+        font-weight: bold;
+    }
+
+    &-italic{
+        font-style: italic;
+    }
+    
+    &-underline{
+        text-decoration: underline;
+    }
+}
