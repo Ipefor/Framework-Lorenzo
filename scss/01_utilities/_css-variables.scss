@@ -4,6 +4,15 @@
         --margin-#{$i}: nth($list: sizes, $n: i);
         --border-width-#{$i}: nth($list: sizes, $n: i)
     }
+
+    --font-size-xxs: nth($list: font-sizes, $n: 1);
+    --font-size-xs: nth($list: font-sizes, $n: 2);
+    --font-size-s: nth($list: font-sizes, $n: 3);
+    --font-size-m: nth($list: font-sizes, $n: 4);
+    --font-size-l: nth($list: font-sizes, $n: 5);
+    --font-size-xl: nth($list: font-sizes, $n: 6);
+    --font-size-xxl: nth($list: font-sizes, $n: 7);
+
     @each $key, $value in $font-types {
         --font-#{$key}: #{$value};
     }
