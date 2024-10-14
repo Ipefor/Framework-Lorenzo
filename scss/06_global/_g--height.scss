@@ -1,0 +1,14 @@
+
+
+@for $index from 1 through 10{
+    .g--height-#{$index*10}{
+        height: $index*10%;
+    }
+}
+
+
+@for $index from 1 through 20{
+    .g--height-#{$index*50px}{
+        height: $index*50px;
+    }
+}
