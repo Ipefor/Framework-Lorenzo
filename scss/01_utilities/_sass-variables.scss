@@ -15,3 +15,30 @@ $colores: (
         "naranja": (#ffe5cc, #ffcc99, #ffb366, #ff9933, #ff8000, #ff6000, #cc4d00, #993900),
         "moradopc": (#e6e0f2, #cdc1e5, #b3a3d8, #9a84ca, #8066bd, #6647b0, #4d388a, #332963, #170453),
 );
+
+$font-types:(
+    "primary": "Arial, sans-serif",
+    
+    "title": "Roboto, sans-serif",
+    
+    "serif": "Georgia, serif",
+    
+    "sans-serif": "Arial, sans-serif",
+    
+);
+
+$box-shadows: (
+        "none": none,
+        "xs": 0 1px 2px rgba(0, 0, 0, 0.05),
+        "sm": 0 1px 3px rgba(0, 0, 0, 0.1),
+        "md": 0 4px 6px rgba(0, 0, 0, 0.1),
+        "lg": 0 10px 15px rgba(0, 0, 0, 0.1),
+        "xl": 0 20px 25px rgba(0, 0, 0, 0.1),
+        "2xl": 0 25px 50px rgba(0, 0, 0, 0.25)
+);
+
+$box-shadows-advanced: (
+        "primary-sm": 0 1px 3px rgba(52, 152, 219, 0.5),
+        "success-lg": 0 10px 15px rgba(46, 204, 113, 0.3),
+        "danger-xl": 0 20px 25px rgba(231, 76, 60, 0.4)
+);

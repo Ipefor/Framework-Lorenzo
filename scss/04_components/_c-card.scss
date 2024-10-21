@@ -1,15 +1,15 @@
 .card {
-  @extend .bg-principal-1;
+  @extend .background-principal-1;
   @extend .shadow-md;
-  @extend .g--border-radius-4;
+  @extend .g--border-radius-1;
   padding: 16px;
   max-width: 300px;
   margin: 16px;
-}
+
   &__image {
     width: 100%;
     height: auto;
-    @extend .g--border-rarius-4
+    @extend .g--border-radius-4;
   }
   &__title {
     @extend .text-principal-6;
@@ -20,7 +20,9 @@
   }
   &__content {
     @extend .text-grises-7;
-    @extend .g--font-family-content;
+    @extend .g--font-family-serif;
     font-size: 1rem;
     margin-top: 8px;
   }
+}
+  

@@ -1,0 +1,17 @@
+@each $palette-name, $colors in $colores {
+  $num-colors: length($colors);
+
+  @for $i from 1 through $num-colors {
+      .background-#{$palette-name}-#{$i} {
+          background-color: var(--#{$palette-name}-#{$i});
+      }
+
+      .text-#{$palette-name}-#{$i} {
+          color: var(--#{$palette-name}-#{$i});
+      }
+
+      .border-#{$palette-name}-#{$i} {
+          border-color: var(--#{$palette-name}-#{$i});
+      }
+  }
+}

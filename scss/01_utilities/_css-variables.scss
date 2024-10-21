@@ -4,7 +4,7 @@
 
     @for $i from 1 through $sizesLength {
         --padding-#{$i}: nth(sizes, i);
-        --margin-#{$i}: nth( sizes, i);
+        --margin-#{$i}: nth(sizes, i);
         --border-width-#{$i}: nth(sizes, i)
     }
 
@@ -19,14 +19,15 @@
     @each $key, $value in $font-types {
         --font-#{$key}: #{$value};
     }
+
 }
 
 
 :root {
-    $sizeBorderRadius:length($sizesBorderRadius);
+    $sizeBorderRadius: length($sizesBorderRadius);
 
-    @for $i from 1 through $sizeBorderRadius{
-        $valor :nth($sizeBorderRadius, $i);
+    @for $i from 1 through $sizeBorderRadius {
+        $valor : nth($sizesBorderRadius, $i);
         --border-radius-#{$i}: #{$valor};
     }
 }
@@ -34,9 +35,29 @@
 :root {
     @each $palette-name, $colors in $colores {
         $num-colors: length($colors);
+
         @for $i from 1 through $num-colors {
             $color: nth($colors, $i);
             --#{$palette-name}-#{$i}: #{$color};
+        }
+    }
+}
+
+:root {
+    @each $name, $shadows in $box-shadows-advanced {
+        $num-shadows-advance: length($shadows);
+
+        @for $i from 1 through $num-shadows-advance {
+            $shadow: nth($shadows, $i);
+            --#{$name}-#{$i}: #{$shadow};
+        }
+    }
+    @each $name, $shadows in $box-shadows {
+        $num-shadows: length($shadows);
+
+        @for $i from 1 through $num-shadows {
+            $shadow: nth($shadows, $i);
+            --#{$name}-#{$i}: #{$shadow};
         }
     }
 }

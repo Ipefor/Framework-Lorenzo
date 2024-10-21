@@ -2,8 +2,8 @@
 $sizeBorderRadius:length($sizesBorderRadius);
 
 @for $i from 1 through $sizeBorderRadius {
-    $valor :nth($sizeBorderRadius, $i);
-    .g--border-rarius-#{$i} {   
+    $valor :nth($sizesBorderRadius, $i);
+    .g--border-radius-#{$i} {   
         border-radius: var(--border-radius-#{$i}) 
     }
   }

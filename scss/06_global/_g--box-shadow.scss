@@ -1,0 +1,10 @@
+@each $name, $shadow in $box-shadows-advanced {
+  .shadow-#{$name} {
+    box-shadow: #{$shadow};
+  }
+}
+@each $name, $shadow in $box-shadows {
+  .shadow-#{$name} {
+    box-shadow: #{$shadow};
+  }
+}
