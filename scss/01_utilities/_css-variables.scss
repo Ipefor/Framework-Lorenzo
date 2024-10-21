@@ -1,17 +1,20 @@
 :root {
-    @for $i from 1 through 20 {
-        --padding-#{$i}: nth($list: sizes, $n: i);
-        --margin-#{$i}: nth($list: sizes, $n: i);
-        --border-width-#{$i}: nth($list: sizes, $n: i)
+
+    $sizesLength: length($sizes);
+
+    @for $i from 1 through $sizesLength {
+        --padding-#{$i}: nth(sizes, i);
+        --margin-#{$i}: nth( sizes, i);
+        --border-width-#{$i}: nth(sizes, i)
     }
 
-    --font-size-xxs: nth($list: font-sizes, $n: 1);
-    --font-size-xs: nth($list: font-sizes, $n: 2);
-    --font-size-s: nth($list: font-sizes, $n: 3);
-    --font-size-m: nth($list: font-sizes, $n: 4);
-    --font-size-l: nth($list: font-sizes, $n: 5);
-    --font-size-xl: nth($list: font-sizes, $n: 6);
-    --font-size-xxl: nth($list: font-sizes, $n: 7);
+    --font-size-xxs: nth(font-sizes, 1);
+    --font-size-xs: nth(font-sizes, 2);
+    --font-size-s: nth(font-sizes, 3);
+    --font-size-m: nth(font-sizes, 4);
+    --font-size-l: nth(font-sizes, 5);
+    --font-size-xl: nth(font-sizes, 6);
+    --font-size-xxl: nth(font-sizes, 7);
 
     @each $key, $value in $font-types {
         --font-#{$key}: #{$value};
