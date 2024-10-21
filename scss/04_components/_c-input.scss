@@ -1,0 +1,50 @@
+.c-input {
+    padding: var(--padding-2);
+    border: 1px solid var(--border-color, #ccc);
+    border-radius: var(--border-radius-2);
+    font-size: var(--font-size-m);
+    width: 100%;
+    box-sizing: border-box;
+
+    &--small {
+        padding: var(--padding-1);
+        font-size: var(--font-size-s);
+    }
+
+    &--large {
+        padding: var(--padding-3);
+        font-size: var(--font-size-l);
+    }
+
+    &--error {
+        border-color: var(--error-color, #ff0000);
+    }
+
+    &--success {
+        border-color: var(--success-color, #00ff00);
+    }
+
+    &--disabled {
+        background-color: var(--disabled-background-color, #f5f5f5);
+        border-color: var(--disabled-border-color, #ddd);
+        color: var(--disabled-text-color, #999);
+        cursor: not-allowed;
+    }
+
+    &:focus {
+        border-color: var(--focus-border-color, #007fff);
+        outline: none;
+    }
+
+    &:hover {
+        border-color: var(--hover-border-color, #666);
+    }
+
+    &__icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+}
