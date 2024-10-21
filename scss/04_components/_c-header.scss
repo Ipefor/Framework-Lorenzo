@@ -1,0 +1,52 @@
+// _c-header.scss
+
+.c-header {
+    background-color: var(--header-background-color, #333);
+    color: var(--header-text-color, #fff);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--dark {
+        background-color: #000;
+        color: #fff;
+    }
+
+    &--light {
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    &__logo {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    &__nav {
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0 10px;
+
+                a {
+                    color: var(--header-link-color, #fff);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: var(--header-link-hover-color, #ddd);
+                    }
+                }
+            }
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+    }
+}
