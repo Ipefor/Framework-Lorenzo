@@ -1,0 +1,18 @@
+.c-cookiemessage {
+    background-color: var(--cookie-message-background-color, #f5f5f5);
+    color: var(--cookie-message-text-color, #333);
+    padding: 20px;
+    text-align: center;
+    border-radius: var(--border-radius-2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+    &__text {
+        margin-bottom: 20px;
+        font-size: var(--font-size-m);
+    }
+}
