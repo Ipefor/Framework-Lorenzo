@@ -1,0 +1,6 @@
+
+@each $key,$value in $width-map{
+    .g--width-#{$key}{
+        width: var(--width-#{$key});
+    }
+}

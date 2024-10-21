@@ -1,6 +1,18 @@
 :root {
     @for $i from 1 through 20 {
         --padding-#{$i}: nth($list: sizes, $n: i);
-        --margin-#{$i}: nth($list: sizes, $n: i)
+        --margin-#{$i}: nth($list: sizes, $n: i);
+    }
+}
+
+:root{
+    @each $key, $item in $width-map{
+        --width-#{$key}: #{$item};
+    }
+}
+
+:root{
+    @each $key, $item in $height-map{
+        --height-#{$key}: #{$item};
     }
 }

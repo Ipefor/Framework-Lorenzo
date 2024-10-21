@@ -1,0 +1,7 @@
+
+
+@each $key,$value in $height-map{
+    .g--height-#{$key}{
+        height: var(--height-#{$key});
+    }
+}

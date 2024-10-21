@@ -1,241 +1,560 @@
-.g--width-10 {
-  width: 10%;
+:root {
+  --padding-1: nth($list: sizes, $n: i);
+  --margin-1: nth($list: sizes, $n: i);
+  --padding-2: nth($list: sizes, $n: i);
+  --margin-2: nth($list: sizes, $n: i);
+  --padding-3: nth($list: sizes, $n: i);
+  --margin-3: nth($list: sizes, $n: i);
+  --padding-4: nth($list: sizes, $n: i);
+  --margin-4: nth($list: sizes, $n: i);
+  --padding-5: nth($list: sizes, $n: i);
+  --margin-5: nth($list: sizes, $n: i);
+  --padding-6: nth($list: sizes, $n: i);
+  --margin-6: nth($list: sizes, $n: i);
+  --padding-7: nth($list: sizes, $n: i);
+  --margin-7: nth($list: sizes, $n: i);
+  --padding-8: nth($list: sizes, $n: i);
+  --margin-8: nth($list: sizes, $n: i);
+  --padding-9: nth($list: sizes, $n: i);
+  --margin-9: nth($list: sizes, $n: i);
+  --padding-10: nth($list: sizes, $n: i);
+  --margin-10: nth($list: sizes, $n: i);
+  --padding-11: nth($list: sizes, $n: i);
+  --margin-11: nth($list: sizes, $n: i);
+  --padding-12: nth($list: sizes, $n: i);
+  --margin-12: nth($list: sizes, $n: i);
+  --padding-13: nth($list: sizes, $n: i);
+  --margin-13: nth($list: sizes, $n: i);
+  --padding-14: nth($list: sizes, $n: i);
+  --margin-14: nth($list: sizes, $n: i);
+  --padding-15: nth($list: sizes, $n: i);
+  --margin-15: nth($list: sizes, $n: i);
+  --padding-16: nth($list: sizes, $n: i);
+  --margin-16: nth($list: sizes, $n: i);
+  --padding-17: nth($list: sizes, $n: i);
+  --margin-17: nth($list: sizes, $n: i);
+  --padding-18: nth($list: sizes, $n: i);
+  --margin-18: nth($list: sizes, $n: i);
+  --padding-19: nth($list: sizes, $n: i);
+  --margin-19: nth($list: sizes, $n: i);
+  --padding-20: nth($list: sizes, $n: i);
+  --margin-20: nth($list: sizes, $n: i);
 }
 
-.g--width-20 {
-  width: 20%;
+:root {
+  --width-0: $item;
+  --width-px: $item;
+  --width-2px: $item;
+  --width-4px: $item;
+  --width-6px: $item;
+  --width-8px: $item;
+  --width-10px: $item;
+  --width-12px: $item;
+  --width-14px: $item;
+  --width-16px: $item;
+  --width-20px: $item;
+  --width-24px: $item;
+  --width-28px: $item;
+  --width-32px: $item;
+  --width-36px: $item;
+  --width-40px: $item;
+  --width-44px: $item;
+  --width-48px: $item;
+  --width-56px: $item;
+  --width-64px: $item;
+  --width-80px: $item;
+  --width-96px: $item;
+  --width-112px: $item;
+  --width-128px: $item;
+  --width-144px: $item;
+  --width-160px: $item;
+  --width-176px: $item;
+  --width-192px: $item;
+  --width-208px: $item;
+  --width-224px: $item;
+  --width-240px: $item;
+  --width-256px: $item;
+  --width-288px: $item;
+  --width-320px: $item;
+  --width-384px: $item;
+  --width-400px: $item;
+  --width-500px: $item;
+  --width-600px: $item;
+  --width-700px: $item;
+  --width-800px: $item;
+  --width-auto: $item;
+  --width-10: $item;
+  --width-20: $item;
+  --width-30: $item;
+  --width-40: $item;
+  --width-50: $item;
+  --width-60: $item;
+  --width-70: $item;
+  --width-80: $item;
+  --width-90: $item;
+  --width-full: $item;
 }
 
-.g--width-30 {
-  width: 30%;
+:root {
+  --height-0: 0px;
+  --height-px: 1px;
+  --height-2px: 2px;
+  --height-4px: 4px;
+  --height-6px: 6px;
+  --height-8px: 8px;
+  --height-10px: 10px;
+  --height-12px: 12px;
+  --height-14px: 14px;
+  --height-16px: 16px;
+  --height-20px: 20px;
+  --height-24px: 24px;
+  --height-28px: 28px;
+  --height-32px: 32px;
+  --height-36px: 36px;
+  --height-40px: 40px;
+  --height-44px: 44px;
+  --height-48px: 48px;
+  --height-56px: 56px;
+  --height-64px: 64px;
+  --height-80px: 80px;
+  --height-96px: 96px;
+  --height-112px: 112px;
+  --height-128px: 128px;
+  --height-144px: 144px;
+  --height-160px: 160px;
+  --height-176px: 176px;
+  --height-192px: 192px;
+  --height-208px: 208px;
+  --height-224px: 224px;
+  --height-240px: 240px;
+  --height-256px: 256px;
+  --height-288px: 288px;
+  --height-320px: 320px;
+  --height-384px: 384px;
+  --height-400px: 400px;
+  --height-500px: 500px;
+  --height-600px: 600px;
+  --height-700px: 700px;
+  --height-800px: 800px;
+  --height-auto: auto;
+  --height-10: 10%;
+  --height-20: 20%;
+  --height-30: 30%;
+  --height-40: 40%;
+  --height-50: 50%;
+  --height-60: 60%;
+  --height-70: 70%;
+  --height-80: 80%;
+  --height-90: 90%;
+  --height-full: 100%;
 }
 
-.g--width-40 {
-  width: 40%;
+.g--width-0 {
+  width: var(--width-0);
 }
 
-.g--width-50 {
-  width: 50%;
+.g--width-px {
+  width: var(--width-px);
 }
 
-.g--width-60 {
-  width: 60%;
+.g--width-2px {
+  width: var(--width-2px);
 }
 
-.g--width-70 {
-  width: 70%;
+.g--width-4px {
+  width: var(--width-4px);
 }
 
-.g--width-80 {
-  width: 80%;
+.g--width-6px {
+  width: var(--width-6px);
 }
 
-.g--width-90 {
-  width: 90%;
+.g--width-8px {
+  width: var(--width-8px);
 }
 
-.g--width-100 {
-  width: 100%;
+.g--width-10px {
+  width: var(--width-10px);
 }
 
-.g--width-50px {
-  width: 50px;
+.g--width-12px {
+  width: var(--width-12px);
 }
 
-.g--width-100px {
-  width: 100px;
+.g--width-14px {
+  width: var(--width-14px);
 }
 
-.g--width-150px {
-  width: 150px;
+.g--width-16px {
+  width: var(--width-16px);
 }
 
-.g--width-200px {
-  width: 200px;
+.g--width-20px {
+  width: var(--width-20px);
 }
 
-.g--width-250px {
-  width: 250px;
+.g--width-24px {
+  width: var(--width-24px);
 }
 
-.g--width-300px {
-  width: 300px;
+.g--width-28px {
+  width: var(--width-28px);
 }
 
-.g--width-350px {
-  width: 350px;
+.g--width-32px {
+  width: var(--width-32px);
+}
+
+.g--width-36px {
+  width: var(--width-36px);
+}
+
+.g--width-40px {
+  width: var(--width-40px);
+}
+
+.g--width-44px {
+  width: var(--width-44px);
+}
+
+.g--width-48px {
+  width: var(--width-48px);
+}
+
+.g--width-56px {
+  width: var(--width-56px);
+}
+
+.g--width-64px {
+  width: var(--width-64px);
+}
+
+.g--width-80px {
+  width: var(--width-80px);
+}
+
+.g--width-96px {
+  width: var(--width-96px);
+}
+
+.g--width-112px {
+  width: var(--width-112px);
+}
+
+.g--width-128px {
+  width: var(--width-128px);
+}
+
+.g--width-144px {
+  width: var(--width-144px);
+}
+
+.g--width-160px {
+  width: var(--width-160px);
+}
+
+.g--width-176px {
+  width: var(--width-176px);
+}
+
+.g--width-192px {
+  width: var(--width-192px);
+}
+
+.g--width-208px {
+  width: var(--width-208px);
+}
+
+.g--width-224px {
+  width: var(--width-224px);
+}
+
+.g--width-240px {
+  width: var(--width-240px);
+}
+
+.g--width-256px {
+  width: var(--width-256px);
+}
+
+.g--width-288px {
+  width: var(--width-288px);
+}
+
+.g--width-320px {
+  width: var(--width-320px);
+}
+
+.g--width-384px {
+  width: var(--width-384px);
 }
 
 .g--width-400px {
-  width: 400px;
-}
-
-.g--width-450px {
-  width: 450px;
+  width: var(--width-400px);
 }
 
 .g--width-500px {
-  width: 500px;
-}
-
-.g--width-550px {
-  width: 550px;
+  width: var(--width-500px);
 }
 
 .g--width-600px {
-  width: 600px;
-}
-
-.g--width-650px {
-  width: 650px;
+  width: var(--width-600px);
 }
 
 .g--width-700px {
-  width: 700px;
-}
-
-.g--width-750px {
-  width: 750px;
+  width: var(--width-700px);
 }
 
 .g--width-800px {
-  width: 800px;
+  width: var(--width-800px);
 }
 
-.g--width-850px {
-  width: 850px;
+.g--width-auto {
+  width: var(--width-auto);
 }
 
-.g--width-900px {
-  width: 900px;
+.g--width-10 {
+  width: var(--width-10);
 }
 
-.g--width-950px {
-  width: 950px;
+.g--width-20 {
+  width: var(--width-20);
 }
 
-.g--width-1000px {
-  width: 1000px;
+.g--width-30 {
+  width: var(--width-30);
 }
 
-.g--height-10 {
-  height: 10%;
+.g--width-40 {
+  width: var(--width-40);
 }
 
-.g--height-20 {
-  height: 20%;
+.g--width-50 {
+  width: var(--width-50);
 }
 
-.g--height-30 {
-  height: 30%;
+.g--width-60 {
+  width: var(--width-60);
 }
 
-.g--height-40 {
-  height: 40%;
+.g--width-70 {
+  width: var(--width-70);
 }
 
-.g--height-50 {
-  height: 50%;
+.g--width-80 {
+  width: var(--width-80);
 }
 
-.g--height-60 {
-  height: 60%;
+.g--width-90 {
+  width: var(--width-90);
 }
 
-.g--height-70 {
-  height: 70%;
+.g--width-full {
+  width: var(--width-full);
 }
 
-.g--height-80 {
-  height: 80%;
+.g--height-0 {
+  height: var(--height-0);
 }
 
-.g--height-90 {
-  height: 90%;
+.g--height-px {
+  height: var(--height-px);
 }
 
-.g--height-100 {
-  height: 100%;
+.g--height-2px {
+  height: var(--height-2px);
 }
 
-.g--height-50px {
-  height: 50px;
+.g--height-4px {
+  height: var(--height-4px);
 }
 
-.g--height-100px {
-  height: 100px;
+.g--height-6px {
+  height: var(--height-6px);
 }
 
-.g--height-150px {
-  height: 150px;
+.g--height-8px {
+  height: var(--height-8px);
 }
 
-.g--height-200px {
-  height: 200px;
+.g--height-10px {
+  height: var(--height-10px);
 }
 
-.g--height-250px {
-  height: 250px;
+.g--height-12px {
+  height: var(--height-12px);
 }
 
-.g--height-300px {
-  height: 300px;
+.g--height-14px {
+  height: var(--height-14px);
 }
 
-.g--height-350px {
-  height: 350px;
+.g--height-16px {
+  height: var(--height-16px);
+}
+
+.g--height-20px {
+  height: var(--height-20px);
+}
+
+.g--height-24px {
+  height: var(--height-24px);
+}
+
+.g--height-28px {
+  height: var(--height-28px);
+}
+
+.g--height-32px {
+  height: var(--height-32px);
+}
+
+.g--height-36px {
+  height: var(--height-36px);
+}
+
+.g--height-40px {
+  height: var(--height-40px);
+}
+
+.g--height-44px {
+  height: var(--height-44px);
+}
+
+.g--height-48px {
+  height: var(--height-48px);
+}
+
+.g--height-56px {
+  height: var(--height-56px);
+}
+
+.g--height-64px {
+  height: var(--height-64px);
+}
+
+.g--height-80px {
+  height: var(--height-80px);
+}
+
+.g--height-96px {
+  height: var(--height-96px);
+}
+
+.g--height-112px {
+  height: var(--height-112px);
+}
+
+.g--height-128px {
+  height: var(--height-128px);
+}
+
+.g--height-144px {
+  height: var(--height-144px);
+}
+
+.g--height-160px {
+  height: var(--height-160px);
+}
+
+.g--height-176px {
+  height: var(--height-176px);
+}
+
+.g--height-192px {
+  height: var(--height-192px);
+}
+
+.g--height-208px {
+  height: var(--height-208px);
+}
+
+.g--height-224px {
+  height: var(--height-224px);
+}
+
+.g--height-240px {
+  height: var(--height-240px);
+}
+
+.g--height-256px {
+  height: var(--height-256px);
+}
+
+.g--height-288px {
+  height: var(--height-288px);
+}
+
+.g--height-320px {
+  height: var(--height-320px);
+}
+
+.g--height-384px {
+  height: var(--height-384px);
 }
 
 .g--height-400px {
-  height: 400px;
-}
-
-.g--height-450px {
-  height: 450px;
+  height: var(--height-400px);
 }
 
 .g--height-500px {
-  height: 500px;
-}
-
-.g--height-550px {
-  height: 550px;
+  height: var(--height-500px);
 }
 
 .g--height-600px {
-  height: 600px;
-}
-
-.g--height-650px {
-  height: 650px;
+  height: var(--height-600px);
 }
 
 .g--height-700px {
-  height: 700px;
-}
-
-.g--height-750px {
-  height: 750px;
+  height: var(--height-700px);
 }
 
 .g--height-800px {
-  height: 800px;
+  height: var(--height-800px);
 }
 
-.g--height-850px {
-  height: 850px;
+.g--height-auto {
+  height: var(--height-auto);
 }
 
-.g--height-900px {
-  height: 900px;
+.g--height-10 {
+  height: var(--height-10);
 }
 
-.g--height-950px {
-  height: 950px;
+.g--height-20 {
+  height: var(--height-20);
 }
 
-.g--height-1000px {
-  height: 1000px;
+.g--height-30 {
+  height: var(--height-30);
+}
+
+.g--height-40 {
+  height: var(--height-40);
+}
+
+.g--height-50 {
+  height: var(--height-50);
+}
+
+.g--height-60 {
+  height: var(--height-60);
+}
+
+.g--height-70 {
+  height: var(--height-70);
+}
+
+.g--height-80 {
+  height: var(--height-80);
+}
+
+.g--height-90 {
+  height: var(--height-90);
+}
+
+.g--height-full {
+  height: var(--height-full);
 }
 
 /*# sourceMappingURL=main.css.map */
