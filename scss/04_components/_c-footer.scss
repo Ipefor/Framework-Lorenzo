@@ -1,0 +1,48 @@
+// _c-footer.scss
+
+.c-footer {
+    background-color: var(--footer-background-color, #333);
+    color: var(--footer-text-color, #fff);
+    padding: 20px;
+    text-align: center;
+
+    &--dark {
+        background-color: #000;
+        color: #fff;
+    }
+
+    &--light {
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    &__links {
+        margin: 10px 0;
+        a {
+            color: var(--footer-link-color, #fff);
+            text-decoration: none;
+            margin: 0 10px;
+
+            &:hover {
+                color: var(--footer-link-hover-color, #ddd);
+            }
+        }
+    }
+
+    &__social {
+        margin: 10px 0;
+        a {
+            color: var(--footer-social-color, #fff);
+            margin: 0 10px;
+
+            &:hover {
+                color: var(--footer-social-hover-color, #ddd);
+            }
+        }
+    }
+
+    &__copyright {
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+}
